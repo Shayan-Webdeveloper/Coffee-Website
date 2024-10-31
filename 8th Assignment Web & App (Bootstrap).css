@@ -1,0 +1,253 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+@font-face {
+     font-family: 'Poppin';
+     src: url(assets/Fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+     font-family: 'Poppin-4';
+     src: url(assets/Fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+     font-family: 'Poppin-2';
+     src: url(assets/Fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+     font-family: 'Poppin-3';
+     src: url(assets/Fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+     font-family: 'Poppin-5';
+     src: url(assets/Fonts/Poppins/Poppins-Thin.ttf);
+}
+*::selection{
+     background-color: #B68834;
+     color: white;
+}
+html,body{
+     width: 100%;
+     height: 100vh;
+}
+@media only screen and (max-width: 992px) {
+     .people{
+          width: 100% !important;
+     }
+     .country .card{
+          width: 100% !important;
+     }
+     .stars{
+          width: 100% !important;
+     }
+     .travel{
+          width: 100% !important;
+     }
+     
+}
+@media only screen and (max-width: 786px) {
+     .people{
+          width: 100% !important;
+     }
+     .number{
+          width: 20% !important;
+     }
+     .black{
+          padding-top: 60% !important;
+     }
+     .black>h1{
+          font-size: 2rem !important;
+          width: 100% !important;
+          line-height: normal !important;
+     }
+     .buy{
+          width: 100% !important;
+     }
+     .telecast{
+          font-size: 1rem !important;
+     }
+     .port{
+          font-size: 1rem !important;
+     }
+     footer{
+          padding-top: 30% !important;
+     }
+     .news{
+          margin-top: 15% !important;
+     }
+}
+@media only screen and (max-width: 576px) {
+     .people{
+          width: 100% !important;
+     }
+     .black>h1{
+          font-size: 1.2rem !important;
+          line-height: normal !important;
+          width: 100% !important;
+     }
+     .black{
+          padding-bottom: 100% !important;
+     }
+     .news{
+          margin-top: 10% !important;
+     }
+     .telecast{
+          font-size: 1.2rem !important;
+     }         
+     .telecast-2{
+          font-size: 1.2rem !important;
+          width: 100%;
+     }
+     .port{
+          font-size: 0.5rem !important;
+     }
+     .port-p{
+          font-size: 0.4rem !important;
+
+     }
+     .port-date{
+          font-size: 0.4rem !important;
+     }
+}
+
+nav{
+     background-color: rgba(20, 2, 0, 0.8);
+     z-index: 300;
+}
+.dropdownmenu ul, .dropdownmenu li{
+     margin: 0;
+     padding: 0;
+}
+.dropdownmenu ul{
+     list-style: none;
+}
+.dropdownmenu li{
+     float: left;
+     position: relative;
+     width: auto;
+}
+.dropdownmenu a{
+     font-family: 'Poppin';
+     display: block;
+     text-align: center;
+     text-decoration: none;
+     transition: all 0.25 ease;
+}
+#submenu{
+     left: 0;
+     top: 35px;
+     z-index: 1;
+}
+li:hover #submenu{
+     opacity: 1 !important;
+     top: 124%;
+     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+     visibility: visible !important;
+     transition: .7s;
+}
+li:not(:hover) #submenu{
+     opacity: 0;
+     visibility: hidden;
+     box-shadow: none;
+     top: 30%;
+     transition: .7s;
+}
+.black{
+     background-image: url(assets/Images/8th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 2.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: cover;
+     padding-top: 8%;
+     padding-left: 6%;
+     padding-right: 6%;
+     padding-bottom: 20%;
+}
+.buy:hover{
+     border: 1px solid white !important;
+     color: white;
+     background: transparent !important;
+     transition: all .6s;
+}
+.buy:not(:hover){
+     border: none;
+     color: black;
+     background: white !important;
+     transition: all .6s;
+}
+.youtube{
+     background-image: url(assets/Images/8th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 3.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: cover;
+     margin-bottom: 5% !important;
+}
+.video{
+     background-color: rgba(0, 0, 0, 0.78);
+     padding-top: 28%;
+     padding-bottom: 28%;
+}
+.pattern{
+     background-image: url(assets/Images/8th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 6.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: cover;
+     padding-top: 10%;
+     padding-bottom: 10%;
+}
+.golden-shadow{
+     box-shadow: 0px 10px 30px 0px rgba(182, 136, 52, 0.2);
+}
+.kind{
+     margin-top: 10%;
+     padding-top: 10%;
+     padding-bottom: 10%;
+     background-color: #B68834;
+}
+.card-button:hover{
+     background-color: #B68834 !important;
+     transition: .7s;
+     color: white;
+}
+.card-button:not(:hover){
+     background-color: none !important;
+     color: black;
+     transition: .7s;
+}
+footer{
+     background-image: url(assets/Images/8th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 16.jpg);
+     background-position: left;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: cover;
+     padding-top: 12%;
+     padding-bottom: 10%;
+}
+.foot-inp:focus{
+     border: 1px solid #80bdff;
+     box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+     transition: .7s;
+     outline: 0;
+}
+.icons{
+     color: #CCCCCC;
+}
+.icons:hover{
+     color: #B68834;
+     transition: .6s;
+}
+.icons:not(:hover){
+     color: #CCCCCC;
+     transition: .6s;
+}
+footer p::selection{
+     background-color: #191919 !important;
+     color: #777777;
+}
+footer h6::selection{
+     background-color: #191919 !important;
+     color: #777777 !important;
+}
